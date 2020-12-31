@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="eng">
+    <head>
+        <title>Hobbies</title>
+                <link rel="Stylesheet" href="{{ url_for('static', filename='css/Assignment 8.css')}}">
+
+    </head>
+<body>
+            <div class="grid-container">
+             {% include 'NavBar.html' %}
+
+
+ <div class="item11"> Hobbies </div>
+ <div class="item13"> <a href="{{ url_for('block') }}"> Block </a></div>
+             {% block content %}
+<div class="hobbies">
+       <h2>{{ title | default('hobbies',true) |upper}} </h2>
+
+          {% if user.firstname == 'Noam'  %}
+            <h3>welcome to {{ user.firstname |upper }} {{ user.lastname |upper}}'s Hobbies</h3>
+            {% else %}
+            <h3> Welcome Guest</h3>
+{% endif %}
+                {% for VAL in hobbies %}
+                     <li>{{ VAL }}</li>
+                     {% endfor %}
+
+{% endblock %}
+</div>
+</div>
+

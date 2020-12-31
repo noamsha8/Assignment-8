@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<title> Academic Knowledge </title>
+<link rel="Stylesheet" href="{{ url_for('static', filename='css/Academic Knowledge.css')}}">
+<script type="text/javascript"
+         src="{{ url_for('static', filename='New-cv.js') }}"></script>
+</head>
+<body> 
+   <div class="grid-container">
+        <div class="item1"> Noam Shachar's CV</div>
+        <div class="item2" > <a class="button" href="{{ url_for('new_cv') }}"><img src="{{ url_for('static', filename='My CV.jpg')}}"  width="100" height="80" style="position: relative;"/></a> </div>
+
+        <div class="item3" id="item3" onmouseover="bgchange3()" onmouseout="bgnormal3()">  <br><br><br><a class="button" href="{{ url_for('about_myself') }}"> About Myself </a> </div>
+        <div class="item4" id="item4" onmouseover="bgchange4()" onmouseout="bgnormal4()">  <br><br><br><a class="button" href="{{ url_for('high_school_graduation') }}"> Highschool Graduation  </a> </div>
+        <div class="item5" id="item5" onmouseover="bgchange5()" onmouseout="bgnormal5()">  <br><br><br><a class="button" href="{{ url_for('army') }}"> Army  </a> </div>
+        <div class="item6" id="item6" onmouseover="bgchange6()" onmouseout="bgnormal6()">  <br><br><br><a class="button" href="{{ url_for('academic_education') }}"> Academic Education  </a> </div>
+        <div class="item7" id="item7" onmouseover="bgchange7()" onmouseout="bgnormal7()">  <br><br><br><a class="button" href="{{ url_for('academic_knowledge') }}"> Academic Knowledge  </a>  </div>
+        <div class="item8" id="item8" onmouseover="bgchange8()" onmouseout="bgnormal8()">  <br><br><br><a class="button" href="{{ url_for('jobs') }}"> Jobs  </a>  </div>
+        <div class="item9" id="item9" onmouseover="bgchange9()" onmouseout="bgnormal9()">  <br><br><br><a class="button" href="{{ url_for('in_summery') }}"> In Summery  </a>  </div>
+        <div class="item10" id="item10" onmouseover="bgchange10()" onmouseout="bgnormal10()">  <br><br><br><a class="button" href="{{ url_for('contact_me') }}"> Contact me  </a>  </div>
+        <div class="item11"> Academic Knowledge</div>
+        <div class="item12"> 
+            <ul style="position: relative;top: -130px;" class="list"></ul>
+            In my degree, I gained skills in the following:
+            <li class="li">SQL and databases</li>
+            <li class="li">Java programing</li>
+            <li class="li">Python programing</li>
+            <li class="li">HTML programing</li>
+            <li class="li">CSS programing</li>
+            <li class="li">Javascript programing</li>
+
+        </div>
+
+    </div>
+</body>
+</html>
